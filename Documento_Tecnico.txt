@@ -1,0 +1,30 @@
+# DOCUMENTO TÉCNICO – INVITACIÓN MIS XV AÑOS XIMENA (MODELO 01)
+
+Web de invitación digital de **Mis XV Años - Ximena**, desarrollada con arquitectura modular propia (Sobre 3D Interactivo + Invitación Editorial Floral con estética de acuarela, verde esmeralda y dorado).
+
+### Diseño
+- Estilo: Romántico, editorial, floral en acuarela y clásico de quinceañera.
+- Paleta: Papel Acuarela Marfil (`#faf7f2`, `#f5efe6`), Rosa Rubor / Empolvado (`#d8b4b0`, `#f3dce0`), Verde Esmeralda / Bosque (`#215732`, `#184225`) y Dorado Champán (`#b89244`, `#c5a059`, `#e5cb94`).
+- Tipografías: *Cormorant Garamond*, *Playfair Display*, *Great Vibes* y *Montserrat*.
+- Diseño completamente responsive para móviles, tablets y ordenadores.
+- Transiciones y revelados en scroll fluidos y sutiles (`IntersectionObserver`).
+
+### Funcionalidades
+- Pantalla inicial con Sobre 3D interactivo, detalles florales de rosas, carta interior deslizable y sello de cera dorado animado (`XV`).
+- Cabecera con arco floral en columnas (`arco_flores.png`), corona real (`corona.png`) y retrato principal en marco de arco dorado.
+- Reproductor de música MP3 local integrado ("DALE PLAY") con barra de progreso interactiva, tiempos y botón flotante sincronizado.
+- Presentación de Padres y Padrinos, bloque de fecha destacada, cuenta regresiva en tiempo real (`DÍAS : HORAS : MINUTOS : SEGUNDOS`) y calendario mensual visual ("El Gran Día - Mayo") con enlace a Google Calendar.
+- Secciones de Misa de Agradecimiento y Recepción con enlaces directos a Google Maps.
+- Fotografías intercaladas con bordes orgánicos estilo papel rasgado y arreglos florales en acuarela (`flores_rosado_1.png`, `flores_rosado_2.png`, `flores_rosado_3.png`).
+- Itinerario de actividades en línea de tiempo vertical alternada con iconografía en verde esmeralda.
+- Código de vestimenta (*Etiqueta*) con siluetas vectoriales y mensaje de cortesía.
+- Sugerencia de regalos con datos de transferencia bancaria, copiado rápido de número de cuenta al portapapeles y código QR ampliable.
+- Galería de fotografías con visor Lightbox interactivo.
+- Confirmación de asistencia (RSVP) mediante botón directo a WhatsApp y formulario interactivo desplegable.
+
+### Estructura del Proyecto
+- `css/`: `global.css`, `animations.css`, `envelope.css`, `invitation.css`, `responsive.css`.
+- `js/`: `config.js`, `envelope.js`, `music.js`, `countdown.js`, `gallery.js`, `rsvp.js`, `interactions.js`, `invitation.js`.
+- `img/`: fotografías de la quinceañera (`xv_portada.jpg`, `xv_foto_1.jpg`..`xv_foto_5.jpg`), recursos florales (`arco_flores.png`, `corona.png`, `flores_rosado_1.png`..`3.png`), código QR y logotipo BizFlow.
+- `iconos/`: iconos animados complementarios.
+- `music/`: pista de audio MP3 local (`cancion_boda.mp3`).

@@ -1,0 +1,810 @@
+/* ==========================================================================
+   RESPONSIVE.CSS - ADAPTACIÓN MULTI-DISPOSITIVO: MÓVIL, TABLET Y PC (FULL RESPONSIVE)
+   MIS XV AÑOS - XIMENA (MODELO 01)
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   1. DISPOSITIVOS MÓVILES PEQUEÑOS (< 380px)
+   -------------------------------------------------------------------------- */
+@media (max-width: 380px) {
+  .xv-mis-xv-title {
+    font-size: 2.5rem;
+  }
+
+  .xv-quince-name {
+    font-size: 3.4rem;
+  }
+
+  .xv-hero-arch-frame {
+    max-width: 245px;
+  }
+
+  .xv-cd-number {
+    font-size: 2.25rem;
+  }
+
+  .xv-cd-unit {
+    min-width: 2.75rem;
+  }
+
+  .xv-floral-decor {
+    max-width: 5.2rem;
+    opacity: 0.85;
+  }
+
+  .xv-banner-flower-topleft,
+  .xv-banner-flower-bottomright,
+  .xv-banner-flower-bottomleft,
+  .xv-final-flower-topright {
+    width: 5.8rem;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   2. TABLETS (min-width: 768px) - DISEÑO EXPANDIDO Y FLUIDO
+   -------------------------------------------------------------------------- */
+@media (min-width: 768px) {
+  body {
+    padding: 0;
+  }
+
+  .main-invitation-container {
+    max-width: 100%;
+    width: 100%;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+  }
+
+  /* 1. Portada Hero en Tablet */
+  .xv-hero-section {
+    padding-bottom: 3.5rem;
+  }
+
+  .xv-floral-arch-header {
+    max-width: 780px;
+    margin: 0 auto -1rem auto;
+  }
+
+  .xv-arch-columns-img {
+    width: 100%;
+    max-width: 760px;
+  }
+
+  .xv-mis-xv-title {
+    font-size: 4.1rem;
+  }
+
+  .xv-crown-img {
+    width: 9rem;
+  }
+
+  .xv-quince-name {
+    font-size: 5.2rem;
+  }
+
+  .xv-hero-photo-wrap {
+    max-width: 740px;
+    margin: 0 auto 2rem auto;
+    padding: 1rem 3rem;
+  }
+
+  .xv-hero-arch-frame {
+    max-width: 350px;
+  }
+
+  .xv-hero-flower-left {
+    top: -1rem;
+    left: 2rem;
+    width: 10.5rem;
+  }
+
+  .xv-hero-flower-right {
+    bottom: -1rem;
+    right: 2rem;
+    width: 11rem;
+  }
+
+  .xv-welcome-text {
+    max-width: 600px;
+    margin-bottom: 2rem;
+  }
+
+  .xv-uppercase-paragraph {
+    font-size: 0.98rem;
+    line-height: 1.7;
+  }
+
+  .xv-audio-player-block {
+    max-width: 420px;
+    padding: 0.75rem 1.75rem 1.25rem 1.75rem;
+  }
+
+  .xv-dale-play-label {
+    font-size: 0.95rem;
+  }
+
+  /* 2. Padres, Padrinos, Fecha, Contador y Calendario en Tablet (Grid 2 Columnas) */
+  .xv-family-date-section {
+    padding: 3.5rem 5rem 4rem 5rem;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 2.5rem 2.5rem;
+    align-items: center;
+    justify-items: center;
+  }
+
+  .xv-family-flower-left {
+    top: 0.25rem;
+    left: -1.5rem;
+    width: 9.5rem;
+  }
+
+  .xv-family-flower-right {
+    bottom: 0.25rem;
+    right: -1.5rem;
+    width: 10rem;
+  }
+
+  .xv-family-block {
+    max-width: 420px;
+    background: rgba(255, 255, 255, 0.55);
+    border: 1px solid var(--xv-border-gold);
+    border-radius: 1.25rem;
+    padding: 2rem 1.75rem;
+    box-shadow: 0 12px 32px rgba(70, 50, 35, 0.06);
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+  }
+
+  .xv-section-subtitle-upper {
+    font-size: 0.94rem;
+  }
+
+  .xv-script-names-group {
+    font-size: 2.35rem;
+  }
+
+  .xv-celebrate-date-block {
+    margin: 0;
+    background: rgba(255, 255, 255, 0.55);
+    border: 1px solid var(--xv-border-gold);
+    border-radius: 1.25rem;
+    padding: 2rem 1.75rem;
+    box-shadow: 0 12px 32px rgba(70, 50, 35, 0.06);
+    max-width: 420px;
+    height: 100%;
+    justify-content: center;
+  }
+
+  .xv-celebrate-big {
+    font-size: 2.45rem;
+  }
+
+  .xv-date-center-number {
+    font-size: 3.8rem;
+  }
+
+  .xv-countdown-block {
+    margin-bottom: 0;
+    background: rgba(255, 255, 255, 0.55);
+    border: 1px solid var(--xv-border-gold);
+    border-radius: 1.25rem;
+    padding: 2rem 1.75rem;
+    box-shadow: 0 12px 32px rgba(70, 50, 35, 0.06);
+    max-width: 420px;
+    height: 100%;
+    justify-content: center;
+  }
+
+  .xv-cd-number {
+    font-size: 3.15rem;
+  }
+
+  .xv-cd-unit {
+    min-width: 4rem;
+  }
+
+  .xv-calendar-block {
+    max-width: 420px;
+    background: rgba(255, 255, 255, 0.55);
+    border: 1px solid var(--xv-border-gold);
+    border-radius: 1.25rem;
+    padding: 1.75rem 1.75rem;
+    box-shadow: 0 12px 32px rgba(70, 50, 35, 0.06);
+    height: 100%;
+    justify-content: center;
+  }
+
+  /* 3. Misa de Agradecimiento y Recepción en 2 Columnas (Tablet y PC) */
+  .xv-locations-section {
+    padding: 3.5rem 5rem;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 2.5rem;
+    align-items: stretch;
+    justify-items: center;
+  }
+
+  .xv-loc-flower-topleft {
+    top: 0.25rem;
+    left: -1.5rem;
+    width: 9.5rem;
+  }
+
+  .xv-loc-flower-midright {
+    bottom: 0.25rem;
+    right: -1.5rem;
+    width: 9.5rem;
+  }
+
+  .xv-event-card {
+    max-width: 440px;
+    background: rgba(255, 255, 255, 0.65);
+    border: 1px solid var(--xv-border-gold);
+    border-radius: 1.25rem;
+    padding: 2.25rem 1.75rem;
+    box-shadow: 0 14px 34px rgba(70, 50, 35, 0.07);
+    justify-content: space-between;
+  }
+
+  .xv-emerald-icon-box svg,
+  .xv-emerald-icon-box img {
+    width: 3.35rem;
+    height: 3.35rem;
+  }
+
+  .xv-gold-script-heading {
+    font-size: 2.6rem;
+  }
+
+  .xv-event-time {
+    font-size: 1.2rem;
+  }
+
+  .xv-event-place {
+    font-size: 1.05rem;
+  }
+
+  .xv-event-desc {
+    font-size: 0.86rem;
+    max-width: 340px;
+  }
+
+  /* 4. Banners Fotográficos Rasgados en Tablet */
+  .xv-torn-photo-banner {
+    margin: 1rem 0;
+  }
+
+  .xv-torn-photo-inner {
+    aspect-ratio: 16 / 9;
+    max-height: 560px;
+  }
+
+  .xv-torn-photo-inner img {
+    object-position: center 20%;
+  }
+
+  .xv-torn-edge-top,
+  .xv-torn-edge-bottom {
+    height: 46px;
+  }
+
+  .xv-banner-flower-topleft,
+  .xv-banner-flower-bottomright,
+  .xv-banner-flower-bottomleft {
+    width: 11.5rem;
+  }
+
+  .xv-banner-flower-topleft {
+    top: -1.1rem;
+    left: -0.35rem;
+  }
+
+  .xv-banner-flower-bottomright {
+    bottom: -1.1rem;
+    right: -0.35rem;
+  }
+
+  .xv-banner-flower-bottomleft {
+    bottom: -1.1rem;
+    left: -0.35rem;
+  }
+
+  /* 5. Itinerario de Actividades en Tablet */
+  .xv-itinerary-section {
+    padding: 3.75rem 3rem 3.25rem 3rem;
+  }
+
+  .xv-itin-flower-left {
+    top: 0.75rem;
+    left: -1rem;
+    width: 9.8rem;
+  }
+
+  .xv-itin-flower-right {
+    bottom: 0.75rem;
+    right: -1rem;
+    width: 9.8rem;
+  }
+
+  .xv-itinerary-title {
+    font-size: 3rem;
+    margin-bottom: 2.25rem;
+  }
+
+  .xv-timeline-container {
+    max-width: 560px;
+    gap: 1.85rem;
+  }
+
+  .xv-timeline-side-left {
+    padding-right: 1.5rem;
+  }
+
+  .xv-timeline-side-right {
+    padding-left: 1.5rem;
+  }
+
+  .xv-timeline-time {
+    font-size: 1rem;
+  }
+
+  .xv-timeline-name {
+    font-size: 0.92rem;
+  }
+
+  .xv-timeline-icon svg,
+  .xv-timeline-icon img {
+    width: 2.65rem;
+    height: 2.65rem;
+  }
+
+  /* 6. Código de Vestimenta en Tablet */
+  .xv-dresscode-section {
+    padding: 3rem 3rem 3.5rem 3rem;
+  }
+
+  .xv-dress-flower-left {
+    top: 0.25rem;
+    left: -1rem;
+    width: 9.8rem;
+  }
+
+  .xv-dress-subtitle {
+    font-size: 1.1rem;
+  }
+
+  .xv-dress-silhouettes svg {
+    width: 3.6rem;
+    height: 4.3rem;
+  }
+
+  .xv-dress-silhouettes img {
+    width: 10.5rem;
+    height: auto;
+  }
+
+  .xv-dress-note {
+    font-size: 0.9rem;
+    max-width: 520px;
+  }
+
+  /* 7. Sugerencia de Regalos en Tablet */
+  .xv-gifts-section {
+    padding: 3.5rem 3rem 3rem 3rem;
+  }
+
+  .xv-gifts-flower-right {
+    top: 0.5rem;
+    right: -1rem;
+    width: 10rem;
+  }
+
+  .xv-gifts-text {
+    font-size: 0.9rem;
+    max-width: 580px;
+    margin-bottom: 2rem;
+  }
+
+  /* 8. Confirmar Asistencia (RSVP) y Galería en Tablet */
+  .xv-rsvp-section {
+    padding: 3.5rem 3rem 4rem 3rem;
+  }
+
+  .xv-rsvp-flower-left {
+    top: 0.25rem;
+    left: -1rem;
+    width: 10.2rem;
+  }
+
+  .xv-rsvp-lead {
+    font-size: 0.9rem;
+    max-width: 540px;
+  }
+
+  .rsvp-online-form {
+    max-width: 480px;
+    padding: 1.75rem;
+  }
+
+  .xv-rsvp-support-text {
+    font-size: 0.88rem;
+    max-width: 520px;
+  }
+
+  .xv-te-esperamos-script {
+    font-size: 3.4rem;
+  }
+
+  .xv-bouquet-card {
+    width: 240px;
+    margin-bottom: 2.5rem;
+  }
+
+  .gallery-block {
+    max-width: 780px;
+  }
+
+  .gallery-grid-2x2 {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    margin-top: 1.15rem;
+  }
+
+  /* 9. Cierre Fotográfico en Tablet */
+  .xv-final-flower-topright {
+    top: -1.1rem;
+    right: -0.35rem;
+    width: 11.5rem;
+  }
+
+  .xv-final-photo-box {
+    aspect-ratio: 16 / 9;
+    max-height: 560px;
+  }
+
+  .xv-final-photo-box img {
+    object-position: center 28%;
+  }
+
+  .xv-final-name {
+    font-size: 3.5rem;
+  }
+
+  .xv-final-sub {
+    font-size: 1rem;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   3. ESCRITORIO Y PC (min-width: 1024px) - EXPERIENCIA PANORÁMICA EDITORIAL
+   -------------------------------------------------------------------------- */
+@media (min-width: 1024px) {
+  .main-invitation-container {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  /* 1. Portada Hero en PC */
+  .xv-hero-section {
+    padding-bottom: 4.5rem;
+  }
+
+  .xv-floral-arch-header {
+    max-width: 980px;
+    margin-bottom: -2rem;
+  }
+
+  .xv-arch-columns-img {
+    max-width: 940px;
+  }
+
+  .xv-mis-xv-title {
+    font-size: 5rem;
+  }
+
+  .xv-crown-img {
+    width: 10.5rem;
+  }
+
+  .xv-quince-name {
+    font-size: 6rem;
+  }
+
+  .xv-hero-photo-wrap {
+    max-width: 960px;
+    padding: 1.25rem 4rem;
+    margin-bottom: 2.25rem;
+  }
+
+  .xv-hero-arch-frame {
+    max-width: 400px;
+    border-width: 3px;
+    padding: 6px;
+  }
+
+  .xv-hero-flower-left {
+    top: -1.25rem;
+    left: 3.5rem;
+    width: 14.5rem;
+  }
+
+  .xv-hero-flower-right {
+    bottom: -1.25rem;
+    right: 3.5rem;
+    width: 15rem;
+  }
+
+  .xv-welcome-text {
+    max-width: 720px;
+    margin-bottom: 2.25rem;
+  }
+
+  .xv-uppercase-paragraph {
+    font-size: 1.06rem;
+    line-height: 1.75;
+  }
+
+  .xv-audio-player-block {
+    max-width: 460px;
+    background: rgba(255, 255, 255, 0.6);
+    border: 1px solid var(--xv-border-gold);
+    border-radius: 1.25rem;
+    padding: 1.25rem 2.25rem;
+    box-shadow: 0 12px 32px rgba(70, 50, 35, 0.06);
+  }
+
+  /* 2. Padres, Fecha, Contador y Calendario en PC */
+  .xv-family-date-section {
+    padding: 4.5rem 11rem 5rem 11rem;
+    max-width: 1440px;
+    margin: 0 auto;
+    gap: 2.75rem 3.5rem;
+  }
+
+  .xv-family-flower-left {
+    top: 0.5rem;
+    left: -1rem;
+    width: 12.5rem;
+  }
+
+  .xv-family-flower-right {
+    bottom: 0.5rem;
+    right: -1rem;
+    width: 13rem;
+  }
+
+  .xv-family-block,
+  .xv-celebrate-date-block,
+  .xv-countdown-block,
+  .xv-calendar-block {
+    max-width: 520px;
+    padding: 2.5rem 2.25rem;
+  }
+
+  .xv-script-names-group {
+    font-size: 2.65rem;
+  }
+
+  .xv-celebrate-big {
+    font-size: 2.75rem;
+  }
+
+  .xv-cd-number {
+    font-size: 3.5rem;
+  }
+
+  /* 3. Misa y Recepción en PC */
+  .xv-locations-section {
+    padding: 4.5rem 11rem;
+    max-width: 1440px;
+    margin: 0 auto;
+    gap: 3.5rem;
+  }
+
+  .xv-loc-flower-topleft {
+    top: 0.5rem;
+    left: -1rem;
+    width: 12.5rem;
+  }
+
+  .xv-loc-flower-midright {
+    bottom: 0.5rem;
+    right: -1rem;
+    width: 12.5rem;
+  }
+
+  .xv-event-card {
+    max-width: 520px;
+    padding: 2.85rem 2.5rem;
+  }
+
+  .xv-gold-script-heading {
+    font-size: 2.9rem;
+  }
+
+  .xv-gold-pill-btn {
+    font-size: 11.5px;
+    padding: 0.62rem 1.75rem;
+  }
+
+  /* 4. Banners Fotográficos Rasgados en PC */
+  .xv-torn-photo-inner {
+    aspect-ratio: 16 / 8.2;
+    max-height: 620px;
+  }
+
+  .xv-torn-photo-inner img {
+    object-position: center 18%;
+  }
+
+  .xv-torn-edge-top,
+  .xv-torn-edge-bottom {
+    height: 56px;
+  }
+
+  .xv-banner-flower-topleft,
+  .xv-banner-flower-bottomright,
+  .xv-banner-flower-bottomleft {
+    width: 14.5rem;
+  }
+
+  .xv-banner-flower-topleft {
+    top: -1.35rem;
+    left: 1rem;
+  }
+
+  .xv-banner-flower-bottomright {
+    bottom: -1.35rem;
+    right: 1rem;
+  }
+
+  .xv-banner-flower-bottomleft {
+    bottom: -1.35rem;
+    left: 1rem;
+  }
+
+  /* 5. Itinerario en PC */
+  .xv-itinerary-section {
+    padding: 5rem 6vw 4.5rem 6vw;
+    max-width: 1320px;
+    margin: 0 auto;
+  }
+
+  .xv-itin-flower-left {
+    top: 1rem;
+    left: -0.75rem;
+    width: 12.5rem;
+  }
+
+  .xv-itin-flower-right {
+    bottom: 1rem;
+    right: -0.75rem;
+    width: 12.5rem;
+  }
+
+  .xv-itinerary-title {
+    font-size: 3.5rem;
+    margin-bottom: 2.75rem;
+  }
+
+  .xv-timeline-container {
+    max-width: 680px;
+    gap: 2.15rem;
+  }
+
+  .xv-timeline-time {
+    font-size: 1.12rem;
+  }
+
+  .xv-timeline-name {
+    font-size: 1rem;
+  }
+
+  .xv-timeline-icon svg,
+  .xv-timeline-icon img {
+    width: 3rem;
+    height: 3rem;
+  }
+
+  /* 6. Código de Vestimenta en PC */
+  .xv-dresscode-section {
+    padding: 4rem 6vw 4.5rem 6vw;
+    max-width: 1320px;
+    margin: 0 auto;
+  }
+
+  .xv-dress-flower-left {
+    top: 0.5rem;
+    left: -0.75rem;
+    width: 12.5rem;
+  }
+
+  .xv-dress-note {
+    font-size: 0.98rem;
+    max-width: 640px;
+  }
+
+  /* 7. Sugerencia de Regalos en PC */
+  .xv-gifts-section {
+    padding: 4.5rem 6vw 4rem 6vw;
+    max-width: 1320px;
+    margin: 0 auto;
+  }
+
+  .xv-gifts-flower-right {
+    top: 0.5rem;
+    right: -0.75rem;
+    width: 12.8rem;
+  }
+
+  .xv-gifts-text {
+    font-size: 0.98rem;
+    max-width: 680px;
+  }
+
+  .qr-code-image {
+    width: 7rem;
+    height: 7rem;
+  }
+
+  /* 8. Confirmar Asistencia y Galería en PC */
+  .xv-rsvp-section {
+    padding: 4.5rem 6vw 5rem 6vw;
+    max-width: 1320px;
+    margin: 0 auto;
+  }
+
+  .xv-rsvp-flower-left {
+    top: 0.5rem;
+    left: -0.75rem;
+    width: 13rem;
+  }
+
+  .xv-rsvp-lead {
+    font-size: 0.98rem;
+    max-width: 640px;
+  }
+
+  .xv-te-esperamos-script {
+    font-size: 4rem;
+  }
+
+  .xv-bouquet-card {
+    width: 270px;
+  }
+
+  .gallery-block {
+    max-width: 1020px;
+  }
+
+  .gallery-grid-2x2 {
+    gap: 1.35rem;
+  }
+
+  /* 9. Cierre Fotográfico en PC */
+  .xv-final-flower-topright {
+    top: -1.35rem;
+    right: 1rem;
+    width: 14.5rem;
+  }
+
+  .xv-final-photo-box {
+    aspect-ratio: 16 / 8.2;
+    max-height: 620px;
+  }
+
+  .xv-final-photo-box img {
+    object-position: center 26%;
+  }
+
+  .xv-final-name {
+    font-size: 4.2rem;
+  }
+
+  .xv-final-sub {
+    font-size: 1.1rem;
+  }
+}
