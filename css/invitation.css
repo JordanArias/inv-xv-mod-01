@@ -19,6 +19,20 @@
 /* ==========================================================================
    ELEMENTOS DECORATIVOS FLORALES ESTÁTICOS (SIN TAPAR CONTENIDO)
    ========================================================================== */
+/*
+  Sistema unificado de flores laterales (flores_rosado_1/2/3.png):
+  - Cada sección usa la MISMA imagen a la izquierda y a la derecha.
+  - La copia derecha se refleja (scaleX(-1)) para que ambas apunten al centro.
+  - Siempre pegadas al borde de la pantalla (aunque la sección tenga max-width).
+  - Tamaño fluido: mínimo fijo en móvil, crece en pantallas grandes.
+*/
+.main-invitation-container {
+  --xv-flower-size: clamp(6rem, 3.25rem + 9vw, 17rem);
+  --xv-flower-bleed: 0.25rem;
+  /* lo poco que sobresale del borde */
+  --xv-section-space: clamp(3.5rem, 2.25rem + 5vw, 7.5rem);
+}
+
 .xv-floral-decor {
   position: absolute;
   pointer-events: none;
@@ -27,6 +41,178 @@
   animation: none !important;
   transition: none !important;
   opacity: 0.92;
+}
+
+.xv-side-flower {
+  width: var(--xv-flower-size);
+  height: auto;
+}
+
+/* Izquierda: arriba, apuntando hacia la derecha */
+/* Derecha: abajo, girada 180° para apuntar hacia la izquierda */
+.xv-side-flower--right {
+  transform: scale(-1, -1);
+}
+
+/* Flores en banners fotográficos y cierre (sobre el borde rasgado) */
+.xv-banner-flower {
+  position: absolute;
+  width: var(--xv-flower-size);
+  height: auto;
+  z-index: 5;
+  pointer-events: none;
+  user-select: none;
+}
+
+.xv-banner-flower--top.xv-banner-flower--right {
+  transform: scaleX(-1);
+}
+
+.xv-banner-flower--bottom.xv-banner-flower--left {
+  transform: scaleY(-1);
+}
+
+.xv-banner-flower--bottom.xv-banner-flower--right {
+  transform: scale(-1, -1);
+}
+
+/* ==========================================================================
+   POSICIÓN INDIVIDUAL DE CADA FLOR (EDITA AQUÍ CADA UNA POR SEPARADO)
+   - top / bottom : distancia vertical dentro de la sección
+   - left / right : distancia al borde de la pantalla
+       calc(50% - 50vw ...) = pegada al borde de la pantalla.
+       Súmale/réstale un valor para alejarla o sacarla más.
+   - width        : tamaño (var(--xv-flower-size) = tamaño fluido común)
+   ========================================================================== */
+
+/* 1. Portada (foto en arco) */
+.xv-flower-hero-left {
+  top: 0;
+  left: calc(52% - 50vw - var(--xv-flower-bleed));
+  width: var(--xv-flower-size);
+}
+
+.xv-flower-hero-right {
+  top: 410px;
+  right: calc(52% - 50vw - var(--xv-flower-bleed));
+  width: var(--xv-flower-size);
+}
+
+/* 2. Padres, fecha y calendario */
+.xv-flower-familia-left {
+  top: 0;
+  left: calc(52% - 50vw - var(--xv-flower-bleed));
+  width: var(--xv-flower-size);
+}
+
+.xv-flower-familia-right {
+  bottom: 0;
+  right: calc(52% - 50vw - var(--xv-flower-bleed));
+  width: var(--xv-flower-size);
+}
+
+/* 3. Misa y recepción */
+.xv-flower-ubicaciones-left {
+  top: 0;
+  left: calc(52% - 50vw - var(--xv-flower-bleed));
+  width: var(--xv-flower-size);
+}
+
+.xv-flower-ubicaciones-right {
+  bottom: 0;
+  right: calc(52% - 50vw - var(--xv-flower-bleed));
+  width: var(--xv-flower-size);
+}
+
+/* 4. Banner fotográfico 1 */
+.xv-flower-banner1-left {
+  top: 0.3rem;
+  left: calc(-1 * var(--xv-flower-bleed));
+  width: var(--xv-flower-size);
+}
+
+.xv-flower-banner1-right {
+  bottom: 0.3rem;
+  right: calc(-1 * var(--xv-flower-bleed));
+  width: var(--xv-flower-size);
+}
+
+/* 5. Itinerario */
+.xv-flower-itinerario-left {
+  top: 0;
+  left: calc(52% - 50vw - var(--xv-flower-bleed));
+  width: var(--xv-flower-size);
+}
+
+.xv-flower-itinerario-right {
+  bottom: 0;
+  right: calc(52% - 50vw - var(--xv-flower-bleed));
+  width: var(--xv-flower-size);
+}
+
+/* 6. Código de vestimenta */
+.xv-flower-vestimenta-left {
+  top: 0;
+  left: calc(52% - 50vw - var(--xv-flower-bleed));
+  width: var(--xv-flower-size);
+}
+
+.xv-flower-vestimenta-right {
+  bottom: 0;
+  right: calc(52% - 50vw - var(--xv-flower-bleed));
+  width: var(--xv-flower-size);
+}
+
+/* 7. Banner fotográfico 2 */
+.xv-flower-banner2-left {
+  top: 0.3rem;
+  left: calc(-1 * var(--xv-flower-bleed));
+  width: var(--xv-flower-size);
+}
+
+.xv-flower-banner2-right {
+  bottom: 0.3rem;
+  right: calc(-1 * var(--xv-flower-bleed));
+  width: var(--xv-flower-size);
+}
+
+/* 8. Sugerencia de regalos */
+.xv-flower-regalos-left {
+  top: 0;
+  left: calc(52% - 50vw - var(--xv-flower-bleed));
+  width: var(--xv-flower-size);
+}
+
+.xv-flower-regalos-right {
+  bottom: 0;
+  right: calc(52% - 50vw - var(--xv-flower-bleed));
+  width: var(--xv-flower-size);
+}
+
+/* 9. Confirmar asistencia */
+.xv-flower-asistencia-left {
+  top: 0;
+  left: calc(52% - 50vw - var(--xv-flower-bleed));
+  width: var(--xv-flower-size);
+}
+
+.xv-flower-asistencia-right {
+  bottom: 0;
+  right: calc(52% - 50vw - var(--xv-flower-bleed));
+  width: var(--xv-flower-size);
+}
+
+/* 10. Cierre fotográfico final */
+.xv-flower-final-left {
+  top: 0.3rem;
+  left: calc(-1 * var(--xv-flower-bleed));
+  width: var(--xv-flower-size);
+}
+
+.xv-flower-final-right {
+  bottom: 0.3rem;
+  right: calc(-1 * var(--xv-flower-bleed));
+  width: var(--xv-flower-size);
 }
 
 .xv-family-date-section> :not(.xv-floral-decor),
@@ -65,11 +251,12 @@
 }
 
 .xv-arch-columns-img {
+  opacity: 0.8;
   width: 106%;
   max-width: 560px;
   height: auto;
   object-fit: contain;
-  margin-top: -0.25rem;
+  margin-top: -0.75rem;
   pointer-events: none;
   z-index: 2;
 }
@@ -132,25 +319,7 @@
   justify-content: center;
   align-items: center;
   padding: 0.5rem 2rem;
-  margin-bottom: 1.4rem;
-}
-
-/* Flores laterales junto al arco de portada (detrás del marco) */
-.xv-hero-flower-left {
-  position: absolute;
-  top: -0.6rem;
-  left: -1.15rem;
-  width: 7.4rem;
-  z-index: 1;
-}
-
-.xv-hero-flower-right {
-  position: absolute;
-  bottom: -0.6rem;
-  right: -1.15rem;
-  width: 7.6rem;
-  z-index: 1;
-  transform: scale(-1, -1);
+  margin-bottom: 1.85rem;
 }
 
 .xv-hero-arch-frame {
@@ -325,23 +494,6 @@
   text-align: center;
 }
 
-.xv-family-flower-left {
-  position: absolute;
-  top: 0.15rem;
-  left: -1.55rem;
-  width: 6.8rem;
-  z-index: 1;
-}
-
-.xv-family-flower-right {
-  position: absolute;
-  bottom: 0.25rem;
-  right: -1.55rem;
-  width: 7.2rem;
-  z-index: 1;
-  transform: scale(-1, -1);
-}
-
 .xv-family-block {
   position: relative;
   z-index: 4;
@@ -349,7 +501,7 @@
   flex-direction: column;
   align-items: center;
   max-width: 285px;
-  padding: 0 0.75rem;
+  padding: 3.35rem 0.75rem;
 }
 
 .xv-section-subtitle-upper {
@@ -368,7 +520,7 @@
   font-size: 2.05rem;
   color: var(--xv-text-dark);
   line-height: 1.18;
-  margin-bottom: 1.35rem;
+  margin-bottom: 2.65rem;
 }
 
 /* A Festejar Mis XV Años + Fecha Editorial */
@@ -600,23 +752,6 @@
   text-align: center;
 }
 
-.xv-loc-flower-topleft {
-  position: absolute;
-  top: 0.2rem;
-  left: -1.55rem;
-  width: 6.8rem;
-  z-index: 1;
-}
-
-.xv-loc-flower-midright {
-  position: absolute;
-  bottom: 0.75rem;
-  right: -1.55rem;
-  width: 6.8rem;
-  z-index: 1;
-  transform: scaleX(-1);
-}
-
 .xv-event-card {
   position: relative;
   z-index: 4;
@@ -755,38 +890,6 @@
   pointer-events: none;
 }
 
-.xv-banner-flower-topleft {
-  position: absolute;
-  top: -1rem;
-  left: -0.85rem;
-  width: 7.5rem;
-  z-index: 5;
-  pointer-events: none;
-  user-select: none;
-}
-
-.xv-banner-flower-bottomright {
-  position: absolute;
-  bottom: -1rem;
-  right: -0.85rem;
-  width: 7.5rem;
-  z-index: 5;
-  pointer-events: none;
-  user-select: none;
-  transform: scale(-1, -1);
-}
-
-.xv-banner-flower-bottomleft {
-  position: absolute;
-  bottom: -1rem;
-  left: -0.85rem;
-  width: 7.5rem;
-  z-index: 5;
-  pointer-events: none;
-  user-select: none;
-  transform: scaleY(-1);
-}
-
 /* ==========================================================================
    5. ITINERARIO DE ACTIVIDADES (LÍNEA DE TIEMPO VERTICAL ALTERNADA)
    ========================================================================== */
@@ -798,23 +901,6 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
-}
-
-.xv-itin-flower-left {
-  position: absolute;
-  top: 0.5rem;
-  left: -1.65rem;
-  width: 6.5rem;
-  z-index: 1;
-}
-
-.xv-itin-flower-right {
-  position: absolute;
-  bottom: 0.5rem;
-  right: -1.65rem;
-  width: 6.5rem;
-  z-index: 1;
-  transform: scaleX(-1);
 }
 
 .xv-itinerary-title {
@@ -928,14 +1014,6 @@
   text-align: center;
 }
 
-.xv-dress-flower-left {
-  position: absolute;
-  top: 0.1rem;
-  left: -1.6rem;
-  width: 6.5rem;
-  z-index: 1;
-}
-
 .xv-dress-subtitle {
   font-family: var(--font-serif);
   font-size: 0.95rem;
@@ -991,15 +1069,6 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
-}
-
-.xv-gifts-flower-right {
-  position: absolute;
-  top: 0.25rem;
-  right: -1.6rem;
-  width: 6.6rem;
-  z-index: 1;
-  transform: scaleX(-1);
 }
 
 .xv-gifts-text {
@@ -1099,14 +1168,6 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
-}
-
-.xv-rsvp-flower-left {
-  position: absolute;
-  top: -0.25rem;
-  left: -1.5rem;
-  width: 7rem;
-  z-index: 1;
 }
 
 .xv-rsvp-lead {
@@ -1310,17 +1371,6 @@
   position: relative;
   width: 100%;
   line-height: 0;
-}
-
-.xv-final-flower-topright {
-  position: absolute;
-  top: -1rem;
-  right: -0.85rem;
-  width: 7.5rem;
-  z-index: 5;
-  pointer-events: none;
-  user-select: none;
-  transform: scaleX(-1);
 }
 
 .xv-final-photo-box {

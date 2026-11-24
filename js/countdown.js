@@ -7,7 +7,7 @@
 
 document.addEventListener("DOMContentLoaded", () => {
   const cfg = window.XV_CONFIG || window.WEDDING_CONFIG;
-  const configDate = cfg?.fecha?.fechaHoraISO || "2026-05-14T18:00:00";
+  const configDate = cfg?.fecha?.fechaHoraISO || "2026-11-24T18:00:00";
   const targetDate = new Date(configDate);
 
   const daysEl = document.getElementById("days");
@@ -15,18 +15,19 @@ document.addEventListener("DOMContentLoaded", () => {
   const minutesEl = document.getElementById("minutes");
   const secondsEl = document.getElementById("seconds");
 
+  let timerId = null;
+
   function updateCountdown() {
     const now = new Date();
     let diff = targetDate.getTime() - now.getTime();
 
-    // Si la fecha configurada ya pasó respecto al reloj del sistema,
-    // proyectar a los próximos 15 días para mantener el contador activo en demostraciones
+    // Si la fecha configurada ya llegó o pasó, mantener el contador en 0 sin reiniciar
     if (diff <= 0) {
-      const nextTarget = new Date(now.getFullYear(), targetDate.getMonth(), targetDate.getDate(), targetDate.getHours(), targetDate.getMinutes(), 0);
-      if (nextTarget <= now) {
-        nextTarget.setFullYear(now.getFullYear() + 1);
+      diff = 0;
+      if (timerId !== null) {
+        clearInterval(timerId);
+        timerId = null;
       }
-      diff = nextTarget.getTime() - now.getTime();
     }
 
     const days = Math.floor(diff / (1000 * 60 * 60 * 24));
@@ -43,7 +44,9 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   updateCountdown();
-  setInterval(updateCountdown, 1000);
+  if (targetDate.getTime() > Date.now()) {
+    timerId = setInterval(updateCountdown, 1000);
+  }
 
   // Configurar enlace dinámico a Google Calendar
   const calendarBtn = document.getElementById("google-calendar-btn");

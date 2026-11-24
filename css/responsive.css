@@ -28,16 +28,9 @@
   }
 
   .xv-floral-decor {
-    max-width: 5.2rem;
     opacity: 0.85;
   }
 
-  .xv-banner-flower-topleft,
-  .xv-banner-flower-bottomright,
-  .xv-banner-flower-bottomleft,
-  .xv-final-flower-topright {
-    width: 5.8rem;
-  }
 }
 
 /* --------------------------------------------------------------------------
@@ -93,18 +86,6 @@
     max-width: 350px;
   }
 
-  .xv-hero-flower-left {
-    top: -1rem;
-    left: 2rem;
-    width: 10.5rem;
-  }
-
-  .xv-hero-flower-right {
-    bottom: -1rem;
-    right: 2rem;
-    width: 11rem;
-  }
-
   .xv-welcome-text {
     max-width: 600px;
     margin-bottom: 2rem;
@@ -132,18 +113,6 @@
     gap: 2.5rem 2.5rem;
     align-items: center;
     justify-items: center;
-  }
-
-  .xv-family-flower-left {
-    top: 0.25rem;
-    left: -1.5rem;
-    width: 9.5rem;
-  }
-
-  .xv-family-flower-right {
-    bottom: 0.25rem;
-    right: -1.5rem;
-    width: 10rem;
   }
 
   .xv-family-block {
@@ -227,18 +196,6 @@
     justify-items: center;
   }
 
-  .xv-loc-flower-topleft {
-    top: 0.25rem;
-    left: -1.5rem;
-    width: 9.5rem;
-  }
-
-  .xv-loc-flower-midright {
-    bottom: 0.25rem;
-    right: -1.5rem;
-    width: 9.5rem;
-  }
-
   .xv-event-card {
     max-width: 440px;
     background: rgba(255, 255, 255, 0.65);
@@ -291,42 +248,9 @@
     height: 46px;
   }
 
-  .xv-banner-flower-topleft,
-  .xv-banner-flower-bottomright,
-  .xv-banner-flower-bottomleft {
-    width: 11.5rem;
-  }
-
-  .xv-banner-flower-topleft {
-    top: -1.1rem;
-    left: -0.35rem;
-  }
-
-  .xv-banner-flower-bottomright {
-    bottom: -1.1rem;
-    right: -0.35rem;
-  }
-
-  .xv-banner-flower-bottomleft {
-    bottom: -1.1rem;
-    left: -0.35rem;
-  }
-
   /* 5. Itinerario de Actividades en Tablet */
   .xv-itinerary-section {
     padding: 3.75rem 3rem 3.25rem 3rem;
-  }
-
-  .xv-itin-flower-left {
-    top: 0.75rem;
-    left: -1rem;
-    width: 9.8rem;
-  }
-
-  .xv-itin-flower-right {
-    bottom: 0.75rem;
-    right: -1rem;
-    width: 9.8rem;
   }
 
   .xv-itinerary-title {
@@ -366,12 +290,6 @@
     padding: 3rem 3rem 3.5rem 3rem;
   }
 
-  .xv-dress-flower-left {
-    top: 0.25rem;
-    left: -1rem;
-    width: 9.8rem;
-  }
-
   .xv-dress-subtitle {
     font-size: 1.1rem;
   }
@@ -396,12 +314,6 @@
     padding: 3.5rem 3rem 3rem 3rem;
   }
 
-  .xv-gifts-flower-right {
-    top: 0.5rem;
-    right: -1rem;
-    width: 10rem;
-  }
-
   .xv-gifts-text {
     font-size: 0.9rem;
     max-width: 580px;
@@ -411,12 +323,6 @@
   /* 8. Confirmar Asistencia (RSVP) y Galería en Tablet */
   .xv-rsvp-section {
     padding: 3.5rem 3rem 4rem 3rem;
-  }
-
-  .xv-rsvp-flower-left {
-    top: 0.25rem;
-    left: -1rem;
-    width: 10.2rem;
   }
 
   .xv-rsvp-lead {
@@ -454,12 +360,6 @@
   }
 
   /* 9. Cierre Fotográfico en Tablet */
-  .xv-final-flower-topright {
-    top: -1.1rem;
-    right: -0.35rem;
-    width: 11.5rem;
-  }
-
   .xv-final-photo-box {
     aspect-ratio: 16 / 9;
     max-height: 560px;
@@ -525,18 +425,6 @@
     padding: 6px;
   }
 
-  .xv-hero-flower-left {
-    top: -1.25rem;
-    left: 3.5rem;
-    width: 14.5rem;
-  }
-
-  .xv-hero-flower-right {
-    bottom: -1.25rem;
-    right: 3.5rem;
-    width: 15rem;
-  }
-
   .xv-welcome-text {
     max-width: 720px;
     margin-bottom: 2.25rem;
@@ -562,18 +450,6 @@
     max-width: 1440px;
     margin: 0 auto;
     gap: 2.75rem 3.5rem;
-  }
-
-  .xv-family-flower-left {
-    top: 0.5rem;
-    left: -1rem;
-    width: 12.5rem;
-  }
-
-  .xv-family-flower-right {
-    bottom: 0.5rem;
-    right: -1rem;
-    width: 13rem;
   }
 
   .xv-family-block,
@@ -602,18 +478,6 @@
     max-width: 1440px;
     margin: 0 auto;
     gap: 3.5rem;
-  }
-
-  .xv-loc-flower-topleft {
-    top: 0.5rem;
-    left: -1rem;
-    width: 12.5rem;
-  }
-
-  .xv-loc-flower-midright {
-    bottom: 0.5rem;
-    right: -1rem;
-    width: 12.5rem;
   }
 
   .xv-event-card {
@@ -645,44 +509,11 @@
     height: 56px;
   }
 
-  .xv-banner-flower-topleft,
-  .xv-banner-flower-bottomright,
-  .xv-banner-flower-bottomleft {
-    width: 14.5rem;
-  }
-
-  .xv-banner-flower-topleft {
-    top: -1.35rem;
-    left: 1rem;
-  }
-
-  .xv-banner-flower-bottomright {
-    bottom: -1.35rem;
-    right: 1rem;
-  }
-
-  .xv-banner-flower-bottomleft {
-    bottom: -1.35rem;
-    left: 1rem;
-  }
-
   /* 5. Itinerario en PC */
   .xv-itinerary-section {
     padding: 5rem 6vw 4.5rem 6vw;
     max-width: 1320px;
     margin: 0 auto;
-  }
-
-  .xv-itin-flower-left {
-    top: 1rem;
-    left: -0.75rem;
-    width: 12.5rem;
-  }
-
-  .xv-itin-flower-right {
-    bottom: 1rem;
-    right: -0.75rem;
-    width: 12.5rem;
   }
 
   .xv-itinerary-title {
@@ -716,12 +547,6 @@
     margin: 0 auto;
   }
 
-  .xv-dress-flower-left {
-    top: 0.5rem;
-    left: -0.75rem;
-    width: 12.5rem;
-  }
-
   .xv-dress-note {
     font-size: 0.98rem;
     max-width: 640px;
@@ -732,12 +557,6 @@
     padding: 4.5rem 6vw 4rem 6vw;
     max-width: 1320px;
     margin: 0 auto;
-  }
-
-  .xv-gifts-flower-right {
-    top: 0.5rem;
-    right: -0.75rem;
-    width: 12.8rem;
   }
 
   .xv-gifts-text {
@@ -755,12 +574,6 @@
     padding: 4.5rem 6vw 5rem 6vw;
     max-width: 1320px;
     margin: 0 auto;
-  }
-
-  .xv-rsvp-flower-left {
-    top: 0.5rem;
-    left: -0.75rem;
-    width: 13rem;
   }
 
   .xv-rsvp-lead {
@@ -785,12 +598,6 @@
   }
 
   /* 9. Cierre Fotográfico en PC */
-  .xv-final-flower-topright {
-    top: -1.35rem;
-    right: 1rem;
-    width: 14.5rem;
-  }
-
   .xv-final-photo-box {
     aspect-ratio: 16 / 8.2;
     max-height: 620px;
@@ -807,4 +614,51 @@
   .xv-final-sub {
     font-size: 1.1rem;
   }
+}
+
+
+/* --------------------------------------------------------------------------
+   ESPACIADO VERTICAL ENTRE SECCIONES (fluido, todas las pantallas)
+   Va al final para prevalecer sobre los padding de los media queries.
+   -------------------------------------------------------------------------- */
+.xv-family-date-section,
+.xv-locations-section,
+.xv-itinerary-section,
+.xv-dresscode-section,
+.xv-gifts-section,
+.xv-rsvp-section {
+  padding-top: var(--xv-section-space);
+  padding-bottom: var(--xv-section-space);
+}
+
+.xv-hero-section {
+  padding-bottom: var(--xv-section-space);
+}
+
+.xv-torn-photo-banner {
+  margin: calc(var(--xv-section-space) * 0.4) 0;
+}
+
+
+
+/* --------------------------------------------------------------------------
+   ESPACIADO VERTICAL ENTRE SECCIONES (fluido, todas las pantallas)
+   Va al final para prevalecer sobre los padding de los media queries.
+   -------------------------------------------------------------------------- */
+.xv-family-date-section,
+.xv-locations-section,
+.xv-itinerary-section,
+.xv-dresscode-section,
+.xv-gifts-section,
+.xv-rsvp-section {
+  padding-top: var(--xv-section-space);
+  padding-bottom: var(--xv-section-space);
+}
+
+.xv-hero-section {
+  padding-bottom: var(--xv-section-space);
+}
+
+.xv-torn-photo-banner {
+  margin: calc(var(--xv-section-space) * 0.4) 0;
 }
